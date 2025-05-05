@@ -16,9 +16,24 @@ docker build . -t cloud-native-hw4
 
 ## Run
 
-```bash
-docker run cloud-native-hw4
-```
+* Run after local build
+
+    ```bash
+    docker run cloud-native-hw4
+    ```
+
+* Run using docker hub image
+  * `latest`
+
+    ```bash
+    docker run eroiko/2025cloud:latest
+    ```
+
+  * Based on certain branch
+
+    ```bash
+    docker run eroiko/2025cloud:<branch_name>
+    ```
 
 ## 自動化
 
@@ -30,3 +45,7 @@ docker run cloud-native-hw4
 
 * `latest`: 基於最新一次 push 所產生的 Image，讓使用者可以取得所有分支中最新的 Image
 * `<BRANCH_NAME>`: 基於 push 的分支所產生的 Image，讓使用者可以取用不同分支的 Image
+
+### Github Action Links
+
+* 自動執行 docker build 和 push: [https://github.com/Shiritai/2025cloud/actions/runs/14829149884/job/41627003008](https://github.com/Shiritai/2025cloud/actions/runs/14829149884/job/41627003008)
