@@ -1,3 +1,3 @@
 FROM hello-world
 
-ENTRYPOINT [ "/sbin/init" ]
+RUN ls /path/does/not/exists
